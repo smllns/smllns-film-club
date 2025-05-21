@@ -9,6 +9,7 @@ import AnimatedVideo from './ui/animatedVideo';
 import { slugify } from '@/lib/slugify';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import { AnimatedTitle } from './AnimatedTitle';
 
 type Movie = Record<string, string>;
 
@@ -67,7 +68,7 @@ const RandomOfTheDay = () => {
       <CardItem
         as='div'
         translateZ='50'
-        className='text-3xl font-black text-white'
+        className='text-3xl font-black text-white w-full max-w-xl'
       >
         {randomMovie?.Name || 'thinking'}
       </CardItem>
@@ -149,11 +150,20 @@ const RandomOfTheDay = () => {
     <div id='random' className='min-h-screen  overflow-x-hidden'>
       <div className='min-h-screen max-w-[1280px] min-[1280px]:mx-auto   flex min-[320px]:flex-col md:flex-row  w-full min-[320px]:justify-center md:justify-around items-center'>
         <AnimatedVideo direction='left' className=' z-10 '>
-          <div className='flex flex-col gap-2 text-center px-4 md:pl-10 max-w-[600px]'>
+          <div className='min-[320px]:flex md:hidden flex-col gap-2 text-center px-4 md:pl-10 max-w-[600px]'>
             <HyperText startOnView={true} animateOnHover={true}>
               Here&apos;s a random film from my collection for you:
             </HyperText>
             <p className='tet-sm text-center text-white/50'>
+              (don&apos;t forget to interact with it)
+            </p>
+          </div>
+          <div className='min-[320px]:hidden md:flex flex-col gap-2  px-4 md:pl-10 max-w-[600px]'>
+            <AnimatedTitle
+              text={"Here's a random film from my collection for you:"}
+            />
+
+            <p className='tet-sm  text-white/50'>
               (don&apos;t forget to interact with it)
             </p>
           </div>

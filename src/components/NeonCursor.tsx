@@ -1,4 +1,3 @@
-// @ts-expect-error: component from library, don't want to fix
 // custom cursor
 'use client';
 

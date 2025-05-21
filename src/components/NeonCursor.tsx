@@ -17,7 +17,7 @@ const NeonCursor = () => {
   const trailControls = useAnimation();
   const glowControls = useAnimation();
 
-  const handleMouseMove = useCallback((e) => {
+  const handleMouseMove = useCallback((e: React.MouseEvent) => {
     setPosition((prev) => ({
       ...prev,
       x: e.clientX,

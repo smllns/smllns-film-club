@@ -1,36 +1,102 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Smllns Film Club
 
-## Getting Started
+Smllns Film Club is a personal movie showcase website where I blend my passion for films and creative coding.  
+Featuring a highly animated and visually rich UI, this project brings my favorite hobby to life through smooth transitions, interactive effects, and a unique visual style.
 
-First, run the development server:
+![Smllns Film Club starter page](./public/mainPage.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Table of Contents
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [About](#about)
+- [Features](#features)
+- [Technologies](#technologies)
+- [Special Thanks](#special-thanks)
+- [Demo](#demo)
+- [Contact](#contact)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## About
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This site showcases my entire rated movie collection from **Letterboxd**—over **2000 films**—presented through a rich and dynamic **visual experience** filled with animations, smooth transitions, and interactive effects.
 
-## Learn More
+![screenshot from Smllns Film Club intro section](./public/about.png)
 
-To learn more about Next.js, take a look at the following resources:
+You can **browse** the full collection, **search** movies by **title** or **year**, and explore detailed movie pages enriched with posters and metadata from **The Movie Database (TMDb) API**.  
+I’ve also curated **four unique movie lists** reflecting different themes and moods, and there is a dedicated **contact page** with all my social links.  
+Each movie entry links back to its original **Letterboxd** page, combining the joy of discovery with a love for creative coding.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project is my way to merge **code and creativity**, sharing my favorite hobby through an immersive web experience.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Features
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Full collection** of my rated movies from **Letterboxd** (over 2000 titles)
+- **Powerful search** by **title** and **year**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+![screenshot from Smllns Film Club library section](./public/libScreen.png)
+
+- **Detailed movie pages** with external data integration (TMDb API)
+- Four curated movie lists:
+  - **Unhinged Women Who Self Destruct**
+  - **Unusual Animation**
+  - **Manic Pixie Dream Girling**
+  - **Personal Favourites**
+- **Contact page** with all my social media links
+- **High-quality animations** and smooth **transitions** enhancing the user experience
+
+---
+
+## Technologies
+
+- **React (Next.js) + TypeScript**
+- **Tailwind CSS** for styling
+- **PapaParse** for loading CSV data
+- **TMDb API** integration for fetching movie posters and metadata
+- **MongoDB** for caching posters and movie info to improve performance
+- **Framer Motion** and **GSAP** for animations
+- **Lenis** for smooth scrolling
+- Uses **React Three Fiber** for _3D backgrounds_, enhanced with **@react-three/drei** for convenient ready-made 3D components and helpers
+
+![screenshot from Smllns Film Club lists section](./public/listsScreen.png)
+
+- **React Icons** for UI elements
+- Various UI libraries for components and layouts: _hover.dev_, _Cult UI_, _UI Layouts_, _Magic UI_, _Aceternity UI_, _SparkUi_
+- **Cursify** for a custom animated cursor
+
+## Special Thanks
+
+- **Pete Barr** — I reworked his component from CodePen for library hero section in this project.  
+  [CodePen profile](https://codepen.io/petebarr) | [Original project](https://codepen.io/petebarr/pen/zYxPgKg)
+
+- **Ksenia Kondrashova** — I reworked her component from CodePen for contacts section in this project.
+  [CodePen profile](https://codepen.io/ksenia-k) | [Original project](https://codepen.io/ksenia-k/pen/NWmMxLg)
+
+---
+
+## Demo
+
+You can try the live version of **Smllns Film Club** here:
+
+[Live Demo](https://smllns-film-club.vercel.app/)
+
+---
+
+## Contact
+
+Feel free to reach out for any questions, suggestions, or opportunities!  
+Visit the **Contact** page on the site for all my social links and more ways to connect.
+
+![screenshot from Smllns Film Club contacts section](./public/contactsScreen.png)
+
+You can also find me here directly:
+
+- **Email**: [marysmoly@gmail.com](mailto:marysmoly@gmail.com)
+- **LinkedIn**: [linkedin.com/in/smllns](https://www.linkedin.com/in/smllns/)
+- **GitHub**: [github.com/smllns](https://github.com/smllns)
+- **Letterboxd**: [letterboxd.com/smllns](https://letterboxd.com/smllns)
+
+I’m always happy to connect and collaborate.
+
+---
+
+_Smllns Film Club — where code meets creativity and the love of movies._

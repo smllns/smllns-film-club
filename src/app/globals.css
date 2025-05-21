@@ -1,0 +1,152 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+:root {
+  --background: #9198e5;
+  --foreground: #ededed;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-recursive: var(--font-recursive);
+  --animate-ripple: ripple var(--duration, 2s) ease calc(var(--i, 0) * 0.2s) infinite;
+  --animate-line-shadow: line-shadow 15s linear infinite;
+
+  @keyframes line-shadow {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 100% -100%;
+    }
+  }
+
+  @keyframes ripple {
+    0%,
+    100% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+      transform: translate(-50%, -50%) scale(0.9);
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* --background: #3e3e3e; */
+    --background: #9198e5;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-recursive);
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.neon-cursor-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.cursor-main {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgb(112, 23, 236);
+  mix-blend-mode: screen;
+  pointer-events: none;
+}
+
+.cursor-trail {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: transparent;
+  border: 2px solid rgb(133, 23, 236);
+  mix-blend-mode: screen;
+  pointer-events: none;
+}
+
+.cursor-glow {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(144, 23, 236, 0.4) 0%, transparent 70%);
+  mix-blend-mode: screen;
+  pointer-events: none;
+}
+
+.reveal-grad {
+  background: radial-gradient(circle at center, #e66464cd 10%, #9198e590 40%, #9198e5 90%);
+}
+.first-grad {
+  background: radial-gradient(circle at center, #ff7676 30%, #a3aaff 90%);
+}
+.second-grad {
+  background: radial-gradient(circle at center, #94bce9 30%, #eeaeca 90%);
+}
+.third-grad {
+  background: radial-gradient(circle at center, #e994e5 30%, #b8eeae 90%);
+}
+
+.pt-page-moveToTopEasing {
+  -webkit-animation: moveToTop 0.7s ease-in-out both;
+  animation: moveToTop 0.7s ease-in-out both;
+}
+
+@-webkit-keyframes moveToTop {
+  from {
+  }
+  to {
+    -webkit-transform: translateY(-100%);
+  }
+}
+@keyframes moveToTop {
+  from {
+  }
+  to {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+}
+
+.pt-page-moveFromBottomEasing {
+  -webkit-animation: moveFromBottom 0.7s ease-in-out both;
+  animation: moveFromBottom 0.7s ease-in-out both;
+}
+
+@-webkit-keyframes moveFromBottom {
+  from {
+    -webkit-transform: translateY(100%);
+  }
+  to {
+    -webkit-transform: translateY(0);
+  }
+}
+@keyframes moveFromBottom {
+  from {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+  to {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}

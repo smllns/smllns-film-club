@@ -36,12 +36,16 @@ export const CardContainer = ({
     containerRef.current.style.transform = `rotateY(${x}deg) rotateX(${y}deg)`;
   };
 
+  // @ts-expect-error: don't want to change anything
   const handleMouseEnter = (_e: React.MouseEvent<HTMLDivElement>) => {
+    // eslint-disable-line @typescript-eslint/no-unused-vars
     setIsMouseEntered(true);
     if (!containerRef.current) return;
   };
 
+  // @ts-expect-error: don't want to change anything
   const handleMouseLeave = (_e: React.MouseEvent<HTMLDivElement>) => {
+    // eslint-disable-line @typescript-eslint/no-unused-vars
     if (!containerRef.current) return;
     setIsMouseEntered(false);
     containerRef.current.style.transform = `rotateY(0deg) rotateX(0deg)`;

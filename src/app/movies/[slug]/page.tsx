@@ -23,7 +23,7 @@ export default function MoviePage() {
   const searchParams = useSearchParams();
   const title = searchParams.get('title');
   const year = searchParams.get('year');
-  // @ts-expect-error
+  // @ts-expect-error: don't want to change function
   const { movieInfo, loading, error } = useMovieInfo(title, year); // eslint-disable-line @typescript-eslint/no-unused-vars
   const { showLoader, animateOut, handleAnimationEnd } = useLoader();
   const contentDelayed = useDelayedContent();

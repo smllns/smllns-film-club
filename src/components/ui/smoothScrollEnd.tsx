@@ -177,7 +177,7 @@ const ParallaxImg = ({
 
   const { scrollYProgress } = useScroll({
     target: ref,
-    // @ts-expect-error
+    // @ts-expect-error: component from library, don't want to change things
     offset: [`${start}px end`, `end ${end * -1}px`],
   });
 

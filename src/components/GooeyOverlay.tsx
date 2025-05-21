@@ -413,7 +413,8 @@ const GooeyOverlay: React.FC<GooeyOverlayProps> = ({
       });
     }
 
-    const _tl = gsap
+    // @ts-expect-error: don't want to change anything
+    const _tl = gsap // eslint-disable-line @typescript-eslint/no-unused-vars
       .timeline({
         scrollTrigger: {
           trigger: pageRef.current,

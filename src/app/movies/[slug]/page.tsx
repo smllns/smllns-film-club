@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+
 // single movie page
 'use client';
 import Loader from '@/components/Loader';
@@ -23,8 +25,8 @@ export default function MoviePage() {
   const searchParams = useSearchParams();
   const title = searchParams.get('title');
   const year = searchParams.get('year');
-  // @ts-expect-error: don't want to change function
-  const { movieInfo, loading, error } = useMovieInfo(title, year); // eslint-disable-line @typescript-eslint/no-unused-vars
+
+  const { movieInfo, loading, error } = useMovieInfo(title, year);
   const { showLoader, animateOut, handleAnimationEnd } = useLoader();
   const contentDelayed = useDelayedContent();
   const { collapsedHeight, posterRef, headerRef, measureHeights } =

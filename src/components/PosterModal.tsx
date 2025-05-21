@@ -72,7 +72,6 @@ export default function PosterModal({
                 info.offset.y * ROTATE_FACTOR * 0.5;
               rotateZ.set(angle);
             }}
-            // @ts-expect-error: don't want to change anything
             onDragEnd={(_e, _info) => {
               // eslint-disable-line @typescript-eslint/no-unused-vars
               rotateZ.set(0);

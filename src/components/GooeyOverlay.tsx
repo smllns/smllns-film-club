@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 // adapted from a CodePen concept: https://codepen.io/ksenia-k/pen/NWmMxLg
 'use client';
 
@@ -413,7 +414,6 @@ const GooeyOverlay: React.FC<GooeyOverlayProps> = ({
       });
     }
 
-    // @ts-expect-error: don't want to change anything
     const _tl = gsap // eslint-disable-line @typescript-eslint/no-unused-vars
       .timeline({
         scrollTrigger: {

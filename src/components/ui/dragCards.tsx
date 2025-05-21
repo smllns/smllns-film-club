@@ -12,7 +12,7 @@ export const DragCards = () => {
     >
       {/* background text  */}
       <h2 className='relative z-0 min-[320px]:text-2xl sm:text-5xl lg:text-7xl font-bold text-white '>
-        i've rated over{' '}
+        i&apos;ve rated over{' '}
         <span className='text-[#FF9A9A] font-black'> 2,000 </span> movies
       </h2>
       <Cards />
@@ -111,7 +111,7 @@ const Card: React.FC<CardProps> = ({
     let maxZIndex = -Infinity;
 
     els.forEach((el) => {
-      let zIndex = parseInt(
+      const zIndex = parseInt(
         window.getComputedStyle(el).getPropertyValue('z-index')
       );
 

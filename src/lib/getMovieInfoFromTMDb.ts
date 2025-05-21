@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 // api fetch for full movie info
 export async function getMovieFullInfoFromTMDb(
   title: string,

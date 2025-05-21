@@ -51,12 +51,6 @@ export default function Card({
     return () => window.removeEventListener('resize', check);
   }, []);
 
-  const content = (
-    <>
-      <Image fill src={`/${src}`} alt='image' className='object-cover' />
-    </>
-  );
-
   return (
     <div
       ref={container}

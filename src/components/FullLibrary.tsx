@@ -117,7 +117,7 @@ const FullLibrary = ({ mainRef }: FullLibraryProps) => {
     description: film.Year ?? '',
     rating: film.Rating ?? '',
   }));
-  let finalSearchFilms = visibleSearchFilms?.map((film) => ({
+  const finalSearchFilms = visibleSearchFilms?.map((film) => ({
     title: film.Name,
     description: film.Year ?? '',
     rating: film.Rating ?? '',

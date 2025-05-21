@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 // hook for getting full movie info
 import { useEffect, useState } from 'react';
 

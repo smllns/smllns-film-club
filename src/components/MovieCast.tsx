@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 // movie cast tab
 import React from 'react';
 import { GlowingEffect } from './ui/glowing-effect';

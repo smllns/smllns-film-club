@@ -413,7 +413,7 @@ const GooeyOverlay: React.FC<GooeyOverlayProps> = ({
       });
     }
 
-    const tl = gsap
+    const _tl = gsap
       .timeline({
         scrollTrigger: {
           trigger: pageRef.current,

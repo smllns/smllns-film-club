@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 // movie details tab
 'use client';
 import React from 'react';

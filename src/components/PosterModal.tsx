@@ -71,7 +71,7 @@ export default function PosterModal({
                 info.offset.y * ROTATE_FACTOR * 0.5;
               rotateZ.set(angle);
             }}
-            onDragEnd={(e, info) => {
+            onDragEnd={(_e, _info) => {
               rotateZ.set(0);
               onClose();
             }}

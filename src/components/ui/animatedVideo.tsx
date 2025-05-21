@@ -40,7 +40,9 @@ const AnimatedVideo = ({
       variants={variants}
       className={className}
       onAnimationComplete={() => {
-        onVisible && isInView ? onVisible() : '';
+        if (onVisible && isInView) {
+          onVisible();
+        }
       }}
     >
       {children}

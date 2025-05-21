@@ -140,7 +140,7 @@ const HeroSearch = () => {
           className='flex flex-col gap-5 w-full justify-center text-center pt-6 px-2'
         >
           <h1 className='min-[320px]:text-3xl md:text-4xl font-bold'>
-            Check out if I've seen your fav movie
+            Check out if I&apos;ve seen your fav movie
           </h1>
           {/* search  */}
           <PlaceholdersAndVanishInput

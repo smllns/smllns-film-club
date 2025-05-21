@@ -1,4 +1,4 @@
-// @ts-nocheck
+// @ts-expect-error
 // custom cursor
 'use client';
 

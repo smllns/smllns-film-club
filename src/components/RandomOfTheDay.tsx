@@ -151,10 +151,10 @@ const RandomOfTheDay = () => {
         <AnimatedVideo direction='left' className=' z-10 '>
           <div className='flex flex-col gap-2 text-center px-4 md:pl-10 max-w-[600px]'>
             <HyperText startOnView={true} animateOnHover={true}>
-              Here's a random film from my collection for you:
+              Here&apos;s a random film from my collection for you:
             </HyperText>
             <p className='tet-sm text-center text-white/50'>
-              (don't forget to interact with it)
+              (don&apos;t forget to interact with it)
             </p>
           </div>
         </AnimatedVideo>

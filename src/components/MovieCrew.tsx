@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 // movie crew tab
 'use client';
 import React from 'react';

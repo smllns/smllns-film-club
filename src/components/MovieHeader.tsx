@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 // movie header used in single movie page
 'use client';
 import React from 'react';

@@ -17,7 +17,7 @@ const NeonCursor = () => {
   const trailControls = useAnimation();
   const glowControls = useAnimation();
 
-  const handleMouseMove = useCallback((e: React.MouseEvent) => {
+  const handleMouseMove = useCallback((e: MouseEvent) => {
     setPosition((prev) => ({
       ...prev,
       x: e.clientX,
@@ -27,10 +27,9 @@ const NeonCursor = () => {
 
   const handleMouseDown = () => setIsClicking(true);
   const handleMouseUp = () => setIsClicking(false);
-
   const handleMouseOver = useCallback(
-    (e) => {
-      const target = e.target;
+    (e: MouseEvent) => {
+      const target = e.target as Element;
       if (target.matches('a, button, input, [data-hover="true"]')) {
         setIsHovering(true);
         void trailControls.start({

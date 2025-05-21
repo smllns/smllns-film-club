@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 // animated poster modal (opened/closed on click)
 import {
   motion,

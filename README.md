@@ -45,8 +45,8 @@ This project is my way to merge **code and creativity**, sharing my favorite hob
 - **High-quality animations** and smooth **transitions** enhancing the user experience
 - **Fully responsive design**: smooth experience on both desktop and mobile
 <p align="center">
-  <img src="./public/mobileScreen1.jpg" width="200" />
-  <img src="./public/mobileScreen2.jpg" width="200" />
+  <img src="./public/mobileScreen1.jpg" height="200" />
+  <img src="./public/mobileScreen2.jpg" height="200" />
 </p>
 
 ---

@@ -34,8 +34,5 @@ export function useMovieInfo(title: string | null, year?: string | null) {
       })
       .finally(() => setLoading(false));
   }, [title, year]);
-
-  console.log(movieInfo);
-
   return { movieInfo, loading, error };
 }

@@ -9,7 +9,6 @@ export function useCollapsedHeight() {
   const measureHeights = () => {
     const posterH = posterRef.current?.offsetHeight || 0;
     const headerH = headerRef.current?.offsetHeight || 0;
-    console.log('measureHeights:', posterH, headerH);
     setCollapsedHeight(Math.max(posterH - headerH, 0));
   };
 

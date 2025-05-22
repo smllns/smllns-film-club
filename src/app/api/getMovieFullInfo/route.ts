@@ -39,7 +39,6 @@ export async function GET(req: Request) {
   const cached = await collection.findOne({ cacheKey });
 
   if (cached) {
-    console.log('Cache hit for', cacheKey);
     return NextResponse.json(cached.data);
   }
 
@@ -56,8 +55,6 @@ export async function GET(req: Request) {
     { $set: { data } },
     { upsert: true }
   );
-
-  console.log('Cache miss, fetched from TMDb for', cacheKey);
 
   return NextResponse.json(data);
 }
